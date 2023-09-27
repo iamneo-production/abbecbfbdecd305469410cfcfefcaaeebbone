@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import React , {useState} from 'react';
 
 function App() {
+  const[name,setName]=useState('');
+  const[greeting,]
   return (
     <div className="App">
       <header className="App-header">
