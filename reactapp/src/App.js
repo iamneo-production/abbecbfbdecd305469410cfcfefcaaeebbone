@@ -20,7 +20,16 @@ function App() {
   return (
     <div className="App">
     <h2>Hey!!! Greeting</h2>
-    <form onSubmit={handleSubmit}
+    <form onSubmit={handleSubmit} data-testing="form">
+      <label data-testid="label">Enter your name</label>
+      <input 
+      type="text"
+      value={name}
+      onChange={handleChange}
+      />
+      <button type="submit" data-testid="buttonElement">Say Hello</button>
+    </form>
+    {greeting && <h2>{greeting}</h2>}
     </div>
   );
 }
