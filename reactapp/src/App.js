@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React , {useState} from 'react';
 
@@ -14,7 +14,7 @@ function App() {
     event.preventDefault();
 
     if(name.trim()!==''){
-      setGreeting('Hello,${name}!');
+      setGreeting(`Hello,${name}!`);
     }
   }
   return (
